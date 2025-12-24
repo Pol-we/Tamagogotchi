@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#798C45">
+
+
+    <TextView
+        android:id="@+id/tvPetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:textColor="#FFFFFFAA"
+        android:textSize="34sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <!-- Счётчик дней -->
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 day"
+            android:fontFamily="@font/comic_neue_bold"
+            android:textColor="#FFFFFFAA"
+            android:textSize="34sp" />
+
+        <!-- ЕДА -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/comic_neue_bold"
+            android:text="@string/stat_food"
+            android:textColor="#AAFFFFFF" />
+
+        <ProgressBar
+            android:id="@+id/pbHunger"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:max="100"/>
+
+        <!-- ЛЮБОВЬ -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stat_love"
+            android:fontFamily="@font/comic_neue_bold"
+            android:textColor="#AAFFFFFF"
+            android:layout_marginTop="6dp"/>
+
+        <ProgressBar
+            android:id="@+id/pbMood"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:max="100"/>
+
+        <!-- УХОД -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comic_neue_bold"
+            android:textColor="#AAFFFFFF"
+            android:text="@string/stat_care"
+            android:layout_marginTop="6dp"/>
+
+        <ProgressBar
+            android:id="@+id/pbCare"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:max="100"/>
+
+    </LinearLayout>
+
+    <!-- Pet -->
+    <ImageView
+        android:id="@+id/ivPet"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/cat" />
+
+    <!-- Phrase -->
+    <TextView
+        android:id="@+id/tvPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="80dp"
+        android:visibility="gone" />
+
+    <!-- Items -->
+    <ImageView
+        android:id="@+id/ivBowl"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp"
+        android:src="@drawable/bowl" />
+
+    <ImageView
+        android:id="@+id/ivBall"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ball" />
+
+    <ImageView
+        android:id="@+id/ivTray"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/box" />
+
+    <Button
+        android:id="@+id/btStop"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="end"
+        android:layout_margin="16dp"
+        android:background="#E07F7F"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="II"
+        android:textColorLink="#F07D7D"
+        android:textSize="34sp" />
+</FrameLayout>

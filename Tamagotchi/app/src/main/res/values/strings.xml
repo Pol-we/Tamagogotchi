@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Tamagotchi</string>
+
+    <string name="new_game">Новая игра</string>
+    <string name="load_game">Загрузить игру</string>
+    <string name="exit">Выход</string>
+
+    <!-- New Game -->
+    <string name="enter_name">Введите имя питомца</string>
+    <string name="start_game">Начать игру</string>
+
+    <!-- Game -->
+    <string name="day_format">%1$d day</string>
+
+    <string name="stat_food">Еда</string>
+    <string name="stat_love">Любовь</string>
+    <string name="stat_care">Уход</string>
+
+    <!-- Pet phrases -->
+    <string name="pet_play">Ура! Поиграем!</string>
+    <string name="pet_hungry">Ням-ням!</string>
+    <string name="pet_dirty">Что-то тут нечисто...</string>
+    <string name="pet_sad">Мне грустно...</string>
+    <string name="pet_happy">Мне хорошо с тобой!</string>
+
+    <!-- Random phrases -->
+    <string-array name="pet_random_phrases">
+        <item>Привет!</item>
+        <item>Погладь меня!</item>
+        <item>Мне скучно...</item>
+        <item>Ты тут?</item>
+    </string-array>
+
+    <!-- Threshold phrases -->
+    <string-array name="hunger_phrases">
+        <item>Я объелся!</item>        <!-- 90 -->
+        <item>Неплохо покушал</item>   <!-- 75 -->
+        <item>Можно бы перекусить</item> <!-- 50 -->
+        <item>Я голоден...</item>      <!-- 25 -->
+        <item>Я умираю от голода!</item> <!-- 10 -->
+    </string-array>
+
+    <string-array name="care_phrases">
+        <item>Чистота!</item>
+        <item>Комфортно</item>
+        <item>Надо прибраться</item>
+        <item>Это ужас!</item>
+    </string-array>
+
+    <string-array name="mood_phrases">
+        <item>Я счастлив!</item>
+        <item>Хорошее настроение</item>
+        <item>Нормально</item>
+        <item>Мне грустно</item>
+        <item>Хочу на завод</item>
+    </string-array>
+
+    <!-- Endings -->
+    <string name="ending_hunger">Органы опеки забрали питомца...</string>
+    <string name="ending_care">Вас выселили из квартиры...</string>
+    <string name="ending_mood">Питомец ушёл на завод...</string>
+    <string name="ending_happy">Котик счастлив!</string>
+
+    <!-- Ending screen -->
+    <string name="restart">Меню</string>
+
+</resources>
